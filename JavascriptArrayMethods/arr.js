@@ -9,6 +9,23 @@ Array.prototype.customConcat = function(arr) {
     return tempArr
 };
 
+// Array map ()
+Array.prototype.customMap = function(callback) {
+    let newArr = [];
+    for (let i = 0; i < this.length; i++) {
+
+        newArr.push(callback(this[i]))
+    }
+
+    return newArr;
+}
+
+// Array foreEach
+Array.prototype.customForEach = function(callback) {
+    for (let i = 0; i < this.length; i++) {
+        callback(this[i])
+    }
+}
 
 // Usage
 
