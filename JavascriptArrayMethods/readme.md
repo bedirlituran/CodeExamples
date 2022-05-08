@@ -1,6 +1,6 @@
 **Javascript Array Methodlarının işləmə prinsipi**
 
-Məqsəd built-in metodların işləmə prinsiplərinin anlaşılması üçün Metodların 0-dan yazmaqdır.
+Məqsəd built-in metodların işləmə prinsiplərinin anlaşılması üçün təkrar və 0-dan yazmaqdır.
 
 #### Sən də öz tövhəni verə bilərsən.
 
