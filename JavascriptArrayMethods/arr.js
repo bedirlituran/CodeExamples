@@ -15,4 +15,4 @@ Array.prototype.customConcat = function(arr) {
 arr01 = [1, 3, 78, 23, 78]
 arr02 = [45, 90]
 
-console.log(arr01.customConcat(arr02))
+const mergedArr = arr01.customConcat(arr02)
