@@ -20,11 +20,31 @@ Array.prototype.customMap = function(callback) {
     return newArr;
 }
 
-// Array foreEach
+// Array foreEach ()
 Array.prototype.customForEach = function(callback) {
     for (let i = 0; i < this.length; i++) {
         callback(this[i])
     }
+}
+
+// Array Some ()
+Array.prototype.customSome = function(callback) {
+    for (let i = 0; i < this.length; i++) {
+        if (callback(this[i])) {
+            return true
+        }
+    }
+    return false;
+}
+
+// Array Every ()
+Array.prototype.customEvery = function(callback) {
+    for (let i = 0; i < this.length; i++) {
+        if (!callback(this[i])) {
+            return false
+        }
+    }
+    return true;
 }
 
 // Usage
