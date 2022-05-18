@@ -8,6 +8,30 @@ Array.prototype.customConcat = function(arr) {
 
     return tempArr
 };
+// Array copyWithin()
+Array.prototype.customCopyWithin = function(target, start = 0, end = this.length) {
+    const tempArr = []
+        // get elements to copy
+    const elementsForCopy = []
+    for (let i = start; i < end; i++) {
+        elementsForCopy.push(this[i])
+    }
+    // left side elements
+    const leftSideElements = []
+    i = 0
+    while (i < target) {
+        leftSideElements.push(this[i]);
+        i++
+    }
+    // right side elements
+    const rightSideElements = []
+    for (let i = end; i < this.length; i++) {
+        rightSideElements.push(this[i])
+    }
+    // joining all together
+    tempArr.customConcat(leftSideElements).customConcat(elementsForCopy).customConcat(rightSideElements)
+    return tempArr
+};
 
 // Array map ()
 Array.prototype.customMap = function(callback) {
@@ -46,10 +70,3 @@ Array.prototype.customEvery = function(callback) {
     }
     return true;
 }
-
-// Usage
-
-arr01 = [1, 3, 78, 23, 78]
-arr02 = [45, 90]
-
-const mergedArr = arr01.customConcat(arr02)
