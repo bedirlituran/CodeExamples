@@ -1,0 +1,70 @@
+                body {
+                    margin: 0px;
+                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: 14px;
+                }
+                
+                ul {
+                    margin: 0px;
+                    padding: 0px;
+                    list-style-type: none;
+                }
+                
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+                /* child selector */
+                
+                .slider-nav {
+                    border: 1px solid lightgray;
+                    border-radius: 10px;
+                }
+                
+                .slider-nav:hover {
+                    border-radius: 0px;
+                }
+                
+                .slider-nav ul {
+                    position: relative;
+                }
+                
+                .slider-nav ul li a {
+                    display: block;
+                    padding: 10px 0px;
+                    border-bottom: 1px solid lightgray;
+                    color: black;
+                    padding: 10px;
+                }
+                
+                .slider-nav ul li:last-child a {
+                    border-bottom: none;
+                }
+                
+                .slider-nav>ul li a i {
+                    margin-right: 10px;
+                }
+                
+                .slider-nav>ul li:hover>a {
+                    background: lightgray;
+                    color: black;
+                }
+                
+                .slider-nav-sub {
+                    width: 300px;
+                    height: 224px;
+                    border: 1px solid lightgray;
+                    border-radius: 0px 10px 10px 0px;
+                    background: white;
+                    position: absolute;
+                    top: -2px;
+                    left: 283px;
+                    display: none;
+                    box-sizing: border-box;
+                }
+                
+                .slider-nav ul li:hover .slider-nav-sub {
+                    display: block;
+                }
+                
+                {}

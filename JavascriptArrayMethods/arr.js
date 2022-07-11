@@ -32,8 +32,17 @@ Array.prototype.customCopyWithin = function(target, start = 0, end = this.length
     tempArr.customConcat(leftSideElements).customConcat(elementsForCopy).customConcat(rightSideElements)
     return tempArr
 };
+// Array entries()
+Array.prototype.customEntries = function() {
+    const tempArr = this[Symbol.iterator]()
 
-// Array map ()
+
+    return tempArr
+};
+arr = [1, 3, 67, 34].customEntries()
+console.log(arr.next().value)
+console.log(arr.next().value)
+    // Array map ()
 Array.prototype.customMap = function(callback) {
     let newArr = [];
     for (let i = 0; i < this.length; i++) {
