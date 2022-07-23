@@ -1,0 +1,10 @@
+#Logo{
+    @extend .py-50;
+    ul {
+        @extend .flex;
+        li{
+            @extend .mx-30;
+
+        }
+    }
+}

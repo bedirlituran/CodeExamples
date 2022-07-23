@@ -1,0 +1,146 @@
+.flex {
+    display: flex;
+}
+
+
+.align-start {
+    align-items: flex-start;
+  }
+.align-end {
+    align-items: flex-end;
+  }
+.align-center {
+    align-items: center;
+  }
+.flex--align-stretch {
+    align-items: stretch;
+}
+.flex--align-baseline {
+    align-items: baseline;
+}
+.flex--justify-start {
+    justify-content: flex-start;
+}
+.flex--justify-end {
+    justify-content: flex-end;
+}
+.flex--justify-center {
+    justify-content: center;
+  }
+.flex--justify-around {
+    justify-content: space-around;
+}
+.flex--justify-between {
+    justify-content: space-between;
+}
+.flex--justify-evenly {
+    justify-content: space-evenly; 
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+
+//padding sizes
+@each $size in $sizes{
+    .p-#{$size} {
+      padding: #{$size}+px;
+    }
+  }
+
+@each $size in $sizes{
+    .px-#{$size} {
+      padding: 0 #{$size}+px;
+    }
+  }
+
+@each $size in $sizes{
+    .py-#{$size} {
+      padding:  #{$size}+px 0;
+    }
+  }
+
+@each $size in $sizes{
+    .pt-#{$size} {
+      padding-top:  #{$size}+px ;
+    }
+  }
+
+@each $size in $sizes{
+    .pb-#{$size} {
+      padding-bottom:  #{$size}+px ;
+    }
+  }
+
+@each $size in $sizes{
+    .pr-#{$size} {
+      padding-right:  #{$size}+px ;
+    }
+  }
+
+@each $size in $sizes{
+    .pl-#{$size} {
+      padding-left:  #{$size}+px ;
+    }
+  }
+
+//margins
+
+@each $size in $sizes{
+  .m-#{$size} {
+    margin: #{$size}+px;
+  }
+}
+
+@each $size in $sizes{
+  .mx-#{$size} {
+    margin: 0 #{$size}+px;
+  }
+}
+
+@each $size in $sizes{
+  .my-#{$size} {
+    margin:  #{$size}+px 0;
+  }
+}
+
+@each $size in $sizes{
+  .mt-#{$size} {
+    margin-top:  #{$size}+px ;
+  }
+}
+
+@each $size in $sizes{
+  .mb-#{$size} {
+    margin-bottom:  #{$size}+px ;
+  }
+}
+
+@each $size in $sizes{
+  .mr-#{$size} {
+    margin-right:  #{$size}+px ;
+  }
+}
+
+@each $size in $sizes{
+  .ml-#{$size} {
+    margin-left:  #{$size}+px ;
+  }
+}
+
+.m-auto-40{
+  margin: 40px auto;
+}
+
+.br-7{
+  border-radius: 7px;
+}
+
+.back-black{
+  background-color: black;
+}
+
+.section-spacing{
+  padding:80px 0px;
+}

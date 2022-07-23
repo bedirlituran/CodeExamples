@@ -1,0 +1,139 @@
+#About{
+      
+
+    //info-content style 
+
+    .info-content{
+        color: white;
+       
+        @extend .px-30;
+        
+
+        h5{
+            font-size: 2rem;
+            border-bottom: 1px solid rgb(145, 145, 145);
+           
+            @extend .py-20;
+            margin: 0px;
+        }
+
+        p{
+            font-size: 0.9rem;
+            line-height: 20px;
+            @extend .py-30; 
+           
+            
+                
+        } 
+
+        .info-link{
+            @extend .flex;
+            @extend .align-center;            
+            width: inherit;
+
+            span{
+                font-size: 1rem;
+                
+            }
+            span:hover a{
+                color: $main-green;
+
+            }
+
+            span:nth-child(2) {
+                border-right: 1px solid rgb(148, 148, 148);
+                border-left: 1px solid rgb(148, 148, 148);
+                @extend .px-20;
+                @extend .mx-20;
+            }
+        }
+
+        .main-button {
+             @extend .my-15;
+             background-color: #9acd32;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+
+            i{
+                opacity: 0;
+            }
+           
+            
+            
+        }
+        .main-button:hover i{
+            opacity: 1;
+           
+        }
+    
+    
+    }
+
+    //info-content-right style
+
+    .info-content-right{
+        border: 2px solid $main-green;
+        @extend .m-40;
+        position: relative;
+        top: 20px;
+        border-radius: 5px;
+
+        img{
+            width: 100%;
+            position: relative;
+            top: 25px;
+            right: 25px;
+            border-radius: 5px;
+        }
+    }
+
+    .common-button{
+        padding: 10px 50px;
+        border-radius: 30px;               
+        background-color: $main-green;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: relative;                
+        font-weight: 600;
+        z-index: 5;
+        &::before{                   
+            content: "\f03e";                   
+            position: absolute;
+            font: 1rem FontAwesome;
+            right: 18%;                    
+            opacity: 0;
+        }
+    
+        span{
+            font-size: 1.2rem;
+            font-weight: 500;
+            position: relative;
+            right: 0;
+        }               
+        
+    }
+    
+    .common-button:hover::before{
+        transition: .3s;
+        opacity: 1;
+        right: 8%;
+    }
+    
+    .common-button:hover.common-button span{
+        transition: .3s;
+        right: 10%;
+    }
+
+
+}
+
+
