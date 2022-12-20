@@ -1,0 +1,4 @@
+- Yeni iş əlavə edilə bilsin
+- İş silinə bilsin
+- İş tamamlanmış hesab oluna bilsin
+- İş edit oluna bilsin
