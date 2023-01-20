@@ -24,9 +24,11 @@ data=[
 
 let sliderSettings={
     slidePosition: 0,
-    slideWidth: 800,
-    sliderHeight: 700,
-    slideAmount: 800,
+    slideWidth: 400,
+    sliderHeight: 800,
+    slideAmount: 400,
+    slideCount:2,
+    direction: 'vertical'
 }
 
 
